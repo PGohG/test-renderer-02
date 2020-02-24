@@ -31,8 +31,8 @@ const ExamResults = ({ doc }) => (
 		</div>
 
 		<div className="row">
-		  <div className="col-2"> <strong> RESULT &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; :</strong></div>
-		  <div className="col-9"> <strong> {doc.additionalData.transcriptData.resultStatement}</strong>
+		  <div className="col-1"> <strong> RESULT &nbsp; :</strong></div>
+		  <div className="col-10"> <strong> {doc.additionalData.transcriptData.resultStatement}</strong>
 			  <br />
 			  <br />
 		  </div>
@@ -40,8 +40,8 @@ const ExamResults = ({ doc }) => (
 
  	   <div> {doc.additionalData.transcriptData.awardStatement
 		? <div className="row">
-			  <div className="col-2"> <strong> AWARD &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : </strong> </div>
-			  <div className="col-9"> <strong> {doc.additionalData.transcriptData.awardStatement} </strong> </div>
+			  <div className="col-1"> <strong> AWARD &nbsp; : </strong> </div>
+			  <div className="col-10"> <strong> {doc.additionalData.transcriptData.awardStatement} </strong> </div>
 			  <br />
 			  <br />
 		   </div>
