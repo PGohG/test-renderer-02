@@ -197,13 +197,11 @@ export const renderITEFooter = doc => (
 		<div> {doc.additionalData.footnoteLine1.includes("Note: ")
 			? <div className="row">
 			  <div className="col-1" />
-			  <div className="col-10 text-left">
+			  <div className="col-1 text-right">
 				<p style={arial5Pt}> Note: </p>
-				<div className="ml-6">
-				<div className="pl-7">
-					<p style={arial5Pt}>{doc.additionalData.footnoteLine1.slice(6)} {doc.additionalData.footnoteLine2}</p>
-				</div>
-				</div>
+			  </div>
+			  <div className="col-9 text-left">
+				<p style={arial5Pt}>{doc.additionalData.footnoteLine1.slice(6)} {doc.additionalData.footnoteLine2}</p>
 			  </div>
 			</div>
 			: <div className="row">
