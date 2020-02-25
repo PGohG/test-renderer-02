@@ -188,7 +188,6 @@ export const renderSignatory = (doc, count, certnbr, separ, stdid) => (
 
 export const renderITEFooter = doc => (
   <div className="container">
-   	<div className="col-1" />
 
 	<div> {doc.additionalData.footnoteLine1
 	? <div
@@ -197,8 +196,9 @@ export const renderITEFooter = doc => (
     >
 		<div> {doc.additionalData.footnoteLine1.includes("Note: ")
 			? <div className="row">
-				<div className="col-2"> &nbsp; &nbsp; &nbsp; Note:  </div>
-				<div className="col-9"> {doc.additionalData.footnoteLine1.slice(6)} &nbsp; {doc.additionalData.footnoteLine2.trim()} </div>
+				<div className="col-1"> &nbsp; </div>
+				<div className="col-1"> &nbsp; Note:  </div>
+				<div className="col-9"> {doc.additionalData.footnoteLine1.slice(6)} {doc.additionalData.footnoteLine2} </div>
 			</div>
 
 			: <div className="col-10 text-left">
@@ -208,16 +208,14 @@ export const renderITEFooter = doc => (
 					<p style={arial5Pt}>{doc.additionalData.footnoteLine2}</p>
 				  </div>
 				</div>
-				<br />
-				<br />
 			</div>
     	} </div>
     </div>
 
 	: null
 	} </div>
-
-	<div className="col-1" />
+	<br />
+	<br />
   </div>
 );
 
