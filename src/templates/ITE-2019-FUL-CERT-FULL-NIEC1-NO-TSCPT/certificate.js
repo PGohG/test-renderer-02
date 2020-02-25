@@ -8,7 +8,7 @@ import {
 } from "../common/certDetails";
 
 
-const Template = ({ certificate }) => (
+const Template = ({ document }) => (
   <div>
     <div
       className="container"
@@ -20,14 +20,14 @@ const Template = ({ certificate }) => (
       </p>
 
       {renderLogoITEandPartner()}
-      {renderFullCertAwardText(certificate)}
-      {renderTwoNiecSignatures(certificate)}
+      {renderFullCertAwardText(document)}
+      {renderTwoNiecSignatures(document)}
       {renderITEFooter(certificate)}
     </div>
   </div>
 );
 
 Template.propTypes = {
-  certificate: PropTypes.object.isRequired
+  document: PropTypes.object.isRequired
 };
 export default Template;
