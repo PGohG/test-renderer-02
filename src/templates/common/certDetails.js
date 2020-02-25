@@ -187,31 +187,36 @@ export const renderSignatory = (doc, count, certnbr, separ, stdid) => (
 );
 
 export const renderITEFooter = doc => (
-	<div className="container">
-		<div className="row d-flex justify-content-start align-items-start" style={{ marginTop: "1rem" }} >
-			<div> {doc.additionalData.footnoteLine1.substr(1,6).includes("Note: ")
-				? <div className="row">
-					<div className="col-1 text-left">
-						<p style={arial5Pt}> &nbsp; &nbsp; &nbsp; Note: </p>
-					</div>
+  <div className="container">
+    <div
+      className="row d-flex justify-content-start align-items-start"
+      style={{ marginTop: "1rem" }}
+    >
+    	<div className="col-1" />
 
-					<div className="col-9 text-left">
-						<p style={arial5Pt}> {doc.additionalData.footnoteLine1}.slice(6) &nbsp; {doc.additionalData.footnoteLine2} </p>
-					</div>
-					<br />
-					<br />
-		  		</div>
+		<div> {doc.additionalData.footnoteLine1.includes("Note: ")
+			? <div className="row">
+				<div className="col-1"> Note:  </div>
+				<div className="col-8"> {doc.additionalData.footnoteLine1.slice(6)} &nbsp; {doc.additionalData.transcriptData.addressLine2} </div>
+			</div>
 
-				: <div className="row">
-					<div className="col-9 text-left">
-						<p style={arial5Pt}> {doc.additionalData.footnoteLine1} &nbsp; {doc.additionalData.footnoteLine2} </p>
-					</div>
-					<br />
-					<br />
+			: <div className="col-10 text-left">
+				<p style={arial5Pt}>{doc.additionalData.footnoteLine1}</p>
+				<div className="ml-3">
+				  <div className="pl-4">
+					<p style={arial5Pt}>{doc.additionalData.footnoteLine2}</p>
+				  </div>
 				</div>
-			} </div>
-		</div>
-	</div>
+				<br />
+				<br />
+			</div>
+
+    	} </div>
+
+    	<div className="col-1" />
+
+    </div>
+  </div>
 );
 
 export const renderCOM = () => (
