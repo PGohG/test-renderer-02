@@ -186,7 +186,50 @@ export const renderSignatory = (doc, count, certnbr, separ, stdid) => (
   </div>
 );
 
+
 export const renderITEFooter = doc => (
+  <div className="container">
+    <div
+      className="row d-flex justify-content-start align-items-start"
+      style={{ marginTop: "1rem" }}
+    >
+
+   <div> {doc.additionalData.footnoteLine1.substr(1,6).includes("Note: ")
+		? <div className="row">
+			<div className="col-1" />
+			<div className="col-1 text-left">
+				<p style={arial5Pt}> Note: </p>
+			</div>
+
+			<div className="col-9 text-left">
+				<p style={arial5Pt}> {doc.additionalData.footnoteLine1}.slice(6) &nbsp; {doc.additionalData.footnoteLine2} </p>
+			</div>
+			<br />
+			<br />
+		  </div>
+	   	</div>
+		: <div className="row">
+			<div className="col-1" />
+			<div className="col-1 text-left">
+				<p style={arial5Pt}> Note: </p>
+			</div>
+
+			<div className="col-9 text-left">
+				<p style={arial5Pt}> {doc.additionalData.footnoteLine1} &nbsp; {doc.additionalData.footnoteLine2} </p>
+			</div>
+			<br />
+			<br />
+		  </div>
+	    </div>
+	} </div>
+
+	<div className="col-1" />
+    </div>
+  </div>
+);
+
+
+export const renderITEFooter0 = doc => (
   <div className="container">
     <div
       className="row d-flex justify-content-start align-items-start"
