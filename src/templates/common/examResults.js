@@ -59,8 +59,8 @@ const ExamResults = ({ doc }) => (
 
 	   <div> {doc.additionalData.transcriptData.ccaGrade
 		? <div className="row">
-			  <div className="col-5"> <strong> CO-CURRICULAR ACTIVITIES GRADE &nbsp; :</strong> </div>
-			  <div className="col-6"> <strong> : &nbsp; &nbsp; {doc.additionalData.transcriptData.ccaGrade} </strong> </div>
+			  <div className="col-4"> <strong> CO-CURRICULAR ACTIVITIES GRADE : </strong> </div>
+			  <div className="col-7"> <strong> : &nbsp; &nbsp; {doc.additionalData.transcriptData.ccaGrade} </strong> </div>
 		   </div>
 		: null
 		} </div>
