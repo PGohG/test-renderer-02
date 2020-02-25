@@ -83,6 +83,14 @@ export const arial5Pt = {
   marginBottom: "0"
 };
 
+export const arial5PtR = {
+  fontFamily: "Arial",
+  fontSize: "15px",
+  textAlign: "right",
+  marginTop: "0",
+  marginBottom: "0"
+};
+
 export const timesNewRoman24Pt = {
   fontFamily: "Times New Roman",
   fontSize: "16px",

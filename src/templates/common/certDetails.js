@@ -9,6 +9,7 @@ import {
 	arial16Pt,
 	arial10Pt,
 	arial5Pt,
+	arial5PtR,
 	timesNewRoman24Pt,
 	timesNewRoman32Pt,
 	COMTextStyle
@@ -197,8 +198,8 @@ export const renderITEFooter = doc => (
 		<div> {doc.additionalData.footnoteLine1.includes("Note: ")
 			? <div className="row">
 			  <div className="col-1" />
-			  <div className="col-1 text-right">
-				<p style={arial5Pt}> Note: </p>
+			  <div className="col-1">
+				<p style={arial5PtR}> Note: </p>
 			  </div>
 			  <div className="col-9 text-left">
 				<p style={arial5Pt}>{doc.additionalData.footnoteLine1.slice(6)} {doc.additionalData.footnoteLine2}</p>
