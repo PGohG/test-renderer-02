@@ -195,7 +195,8 @@ export const renderITEFooter = doc => (
       style={{ marginTop: "1rem" }}
     >
 		<div> {doc.additionalData.footnoteLine1.includes("Note: ")
-			? <div className="col-1" />
+			? <div className="row">
+			  <div className="col-1" />
 			  <div className="col-10 text-left">
 				<p style={arial5Pt}> Note: </p>
 				<div className="ml-3">
@@ -203,8 +204,10 @@ export const renderITEFooter = doc => (
 					<p style={arial5Pt}>{doc.additionalData.footnoteLine1.slice(6)} {doc.additionalData.footnoteLine2}</p>
 				  </div>
 				</div>
+			  </div>
 			</div>
-			: <div className="col-1" />
+			: <div className="row">
+			  <div className="col-1" />
 			  <div className="col-10 text-left">
 				<p style={arial5Pt}>{doc.additionalData.footnoteLine1}</p>
 				<div className="ml-4">
@@ -212,6 +215,7 @@ export const renderITEFooter = doc => (
 					<p style={arial5Pt}>{doc.additionalData.footnoteLine2}</p>
 				  </div>
 				</div>
+			  </div>
 			</div>
     	} </div>
     </div>
