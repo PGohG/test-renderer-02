@@ -200,7 +200,7 @@ export const renderITEFooter = doc => (
 			  <div className="col-10 text-left">
 				<p style={arial5Pt}> Note: </p>
 				<div className="ml-6">
-				<div className="pl-8">
+				<div className="pl-7">
 					<p style={arial5Pt}>{doc.additionalData.footnoteLine1.slice(6)} {doc.additionalData.footnoteLine2}</p>
 				</div>
 				</div>
