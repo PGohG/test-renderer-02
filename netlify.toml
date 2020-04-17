@@ -4,6 +4,6 @@
 [[redirects]]
   from = "https://ite-ecert.netlify.com"
   to = "https://ite-ecert-dev.netlify.app"
-  status = 301
+  status = 200
   force = true
   
