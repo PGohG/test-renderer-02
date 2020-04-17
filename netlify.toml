@@ -3,7 +3,6 @@
   publish = "dist"
 [[redirects]]
   from = "/*"
-  to = "https://ite-ecert-dev.netlify.app"
-  status = 301
-  force = true
+  to = "https://ite-ecert.netlify.app"
+  status = 200
   
