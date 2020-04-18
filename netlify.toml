@@ -2,7 +2,8 @@
   command = "npm run build"
   publish = "dist"
 [[redirects]]
-  from = "https://ite-ecert-dev.netlify.com"
+  from = "/*"
   to = "https://ite-ecert.netlify.app"
   status = 200
+  force = true
   
