@@ -50,7 +50,7 @@ const Recipient = ({ doc }) => (
 	} </div>
 
 	<div> {doc.additionalData.transcriptData.addressLine3
-	? <div> {doc.additionalData.transcriptData.addressLine3.startsWith("#")
+	? <div> {{doc.additionalData.transcriptData.addressLine3}==="#"
 		? <div> {doc.additionalData.transcriptData.addressLine4
 			? <div> {doc.additionalData.transcriptData.graduationField.includes("DATE OF GRADUATION")
 				? <div className="row">
