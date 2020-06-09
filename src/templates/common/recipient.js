@@ -52,18 +52,18 @@ const Recipient = ({ doc }) => (
 	<div> {doc.additionalData.transcriptData.addressLine3
 		? <div> {doc.additionalData.transcriptData.addressLine3.startsWith("#")
 			? <div> {doc.additionalData.transcriptData.addressLine4
-					? <div> {doc.additionalData.transcriptData.graduationField.includes("DATE OF GRADUATION")
-						? <div className="row">
-							  <div className="col-2">  </div>
-							  <div className="col-5"> &nbsp; &nbsp; {doc.additionalData.transcriptData.addressLine4} </div>
-							  <div className="col-4"> {doc.additionalData.transcriptData.graduationField} : &nbsp; {doc.additionalData.transcriptData.graduationDates} </div>
-						   </div>
-						: <div className="row">
-							  <div className="col-2">  </div>
-							  <div className="col-9"> &nbsp; &nbsp; {doc.additionalData.transcriptData.addressLine3} </div>
-						   </div>
-						} </div>
-			: null
+				? <div> {doc.additionalData.transcriptData.graduationField.includes("DATE OF GRADUATION")
+					? <div className="row">
+						  <div className="col-2">  </div>
+						  <div className="col-5"> &nbsp; &nbsp; {doc.additionalData.transcriptData.addressLine4} </div>
+						  <div className="col-4"> {doc.additionalData.transcriptData.graduationField} : &nbsp; {doc.additionalData.transcriptData.graduationDates} </div>
+					   </div>
+					: <div className="row">
+						  <div className="col-2">  </div>
+						  <div className="col-9"> &nbsp; &nbsp; {doc.additionalData.transcriptData.addressLine4} </div>
+					   </div>
+					} </div>
+				: null
 			} </div>
 
 			: <div> {doc.additionalData.transcriptData.addressLine4
@@ -103,6 +103,7 @@ const Recipient = ({ doc }) => (
 					} </div>
 				} </div>
 		} </div>
+
 	: <div> {doc.additionalData.transcriptData.addressLine4
 		? <div> {doc.additionalData.transcriptData.graduationField.includes("DATE OF GRADUATION")
 			? <div className="row">
