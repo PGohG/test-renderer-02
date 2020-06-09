@@ -6,7 +6,7 @@ import {
 } from "./certStyles";
 
 const rmAddr = addr => {
-	if (addr == "#")) {	return null; };
+	if (addr.startsWith("#") && addr.endsWith("#")) {	return null; };
 };
 
 const Recipient = ({ doc }) => (
