@@ -5,6 +5,9 @@ import {
 	arial12PtL
 } from "./certStyles";
 
+const rmAddr = addr => {
+	if (addr == "#")) {	return null; };
+};
 
 const Recipient = ({ doc }) => (
   <div className="container" style={arial12PtL}>
@@ -29,7 +32,7 @@ const Recipient = ({ doc }) => (
 	} </div>
 
 	<div> {doc.additionalData.transcriptData.addressLine2
-	? <div> {doc.additionalData.transcriptData.addressLine3
+	? <div> {rmAddr(doc.additionalData.transcriptData.addressLine3)
 		? <div className="row">
 			 <div className="col-2">  </div>
 			 <div className="col-9"> &nbsp; &nbsp; {doc.additionalData.transcriptData.addressLine2} </div>
@@ -49,7 +52,7 @@ const Recipient = ({ doc }) => (
 	: null
 	} </div>
 
-	<div> {doc.additionalData.transcriptData.addressLine3 && !doc.additionalData.transcriptData.addressLine3.startsWith("#")
+	<div> {rmAddr(doc.additionalData.transcriptData.addressLine3)
 	? <div> {doc.additionalData.transcriptData.addressLine4
 		? <div> {doc.additionalData.transcriptData.graduationField.includes("DATE OF GRADUATION")
 			? <div> <div className="row">
