@@ -37,6 +37,8 @@ export const GradingSystem = ({ doc }) => {
 		</div>
     ));
 
+
+   	if (s.gradeSeq < 100) {
     return (
  	 <div className="container">
  	  <div key={j}>
@@ -44,7 +46,8 @@ export const GradingSystem = ({ doc }) => {
         {gradeLines}
       </div>
  	 </div>
-    );
+    )
+    };
   });
 
   return <div>{legendGrades}</div>;
