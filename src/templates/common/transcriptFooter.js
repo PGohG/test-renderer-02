@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import React from "react";
 import GradingSystem from "./gradingSystem";
+import GradingSystem2 from "./gradingSystem2";
 
 import {
 	arial11PtC
@@ -29,7 +30,7 @@ export const TranscriptFooter = ({ doc }) => (
 		</div>
 
 		<div className="col-3">
-		    <br />
+			<GradingSystem2 doc={doc} />
 		</div>
 
 		<div className="col-4">
