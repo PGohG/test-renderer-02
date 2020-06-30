@@ -21,9 +21,9 @@ const Template = ({ document }) => (
 	    <div
 	      className="p-2 container"
 	      style={{
-			top: 0,
-			width: 100%,
-			height: 100%,
+			top: "0",
+			width: "100%",
+			height: "100%",
 	        backgroundImage: `url('${certificateBg}')`,
 	        backgroundPosition: "center",
 	        backgroundSize: "cover",
