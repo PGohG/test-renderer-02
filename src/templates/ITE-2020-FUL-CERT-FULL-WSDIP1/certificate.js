@@ -9,38 +9,28 @@ import { PrintWatermark } from "./common/PrintWatermark";
 import certificateBg from "./common/certificate_background.png";
 
 import {
-	renderFullCertAwardText,
-	renderTwoSignatures,
-	renderITEFooter
-} from "../common/certDetailsWSDip";
+	renderFullCertAwardTextWSDip,
+	renderTwoSignaturesWSDip
+} from "./common/certDetailsWSDip";
 
 
 const Template = ({ document }) => (
-	<div>
-	    <PrintWatermark />
-	    <div
-	      className="p-2 container"
-	      style={{
-			top: "0",
-			width: "100%",
-			height: "100%",
-	        backgroundImage: `url('${certificateBg}')`,
-	        backgroundPosition: "center",
-	        backgroundSize: "cover",
-	        border: "1px solid #324353"
-	      }}
-	    >
-			<p>
-			<br />
-			<br />
-			</p>
-
-			{renderFullCertAwardText(document)}
-			{renderTwoSignatures(document)}
-			{renderITEFooter(document)}
-
-		</div>
+  <>
+    <PrintWatermark />
+    <div
+	  className="container"
+	  style={{
+		backgroundImage: `url('${certificateBg}')`,
+		backgroundPosition: "top",
+		backgroundSize: "cover",
+		backgroundRepeat: "no-repeat",
+		border: "1px solid #324353"
+	  }}
+	>
+		{renderFullCertAwardTextWSDip(document)}
+		{renderTwoSignaturesWSDip(document)}
 	</div>
+  </>
 );
 
 Template.propTypes = {

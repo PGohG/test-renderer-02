@@ -4,17 +4,18 @@ import { css } from "@emotion/core";
 export const PrintWatermark: FunctionComponent = () => (
   <div
     css={css`
-      width: 0;
-      height: 0;
+      width: 21cm;
+      height: 29.7cm;
       opacity: 0;
       display: none;
       position: absolute;
       background-image: url("/static/images/watermark.svg");
+		backgroundSize: cover;
       background-repeat: repeat;
 
       @media print {
-        width: 100%;
-        height: 100%;
+		  width: 21cm;
+		  height: 29.7cm;
         opacity: 0.6;
         display: block;
       }
@@ -22,3 +23,4 @@ export const PrintWatermark: FunctionComponent = () => (
     className="print-only"
   />
 );
+
