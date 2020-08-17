@@ -26,7 +26,7 @@ export const GradingSystem = ({ doc }) => {
 				<br />
 			  </div>
 			: <div className="row">
-				<div className="col-11" style={arial9PtL}> <strong> Module Grading System: </strong> </div>
+				<div className="col-11" style={arial9PtL}> <strong> Module Grading System : </strong> </div>
 				<br />
 				<br />
 			  </div>
