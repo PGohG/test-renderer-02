@@ -18,24 +18,12 @@ export const GradingSystem = ({ doc }) => {
   const legendTitle = s => {
 	if (s.gradeSeq==1) {
 	  return (
-		  <div>
-			<div> {doc.additionalData.transcriptData.career.includes("WORK-STUDY DIPLOMA")
-			? <div className="row">
-				<div className="col-11" style={arial9PtL}> <strong> Grading System: </strong> </div>
-				<br />
-				<br />
-			  </div>
-			: <div className="row">
-				<div className="col-11" style={arial9PtL}> <strong> Module Grading System: </strong> </div>
-				<br />
-				<br />
-			  </div>
-			} </div>
-
-			  <div className="row">
-				<div className="col-5" style={arial9PtC}><u>Grade</u></div>
-				<div className="col-7" style={arial9PtL}><u>Description</u></div>
-			  </div>
+		  <div className="row">
+			<div className="col-11" style={arial9PtL}> <strong> Module Grading System: </strong> </div>
+			<br />
+			<br />
+			<div className="col-5" style={arial9PtC}><u>Grade</u></div>
+			<div className="col-7" style={arial9PtL}><u>Description</u></div>
 		  </div>
 		)
 	  };
