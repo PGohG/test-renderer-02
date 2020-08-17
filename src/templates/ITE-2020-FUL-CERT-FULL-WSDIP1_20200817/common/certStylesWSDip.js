@@ -13,17 +13,15 @@ export const halfWidthStyle = {
   height: "auto"
 };
 
-export const threequartWidthStyle = {
-  width: "85%",
-  height: "auto",
-  whiteSpace: "nowrap"
+export const threeqartWidthStyle = {
+  width: "75%",
+  height: "auto"
 };
 
 export const myriad10 = {
   fontFamily: "Myriad Pro",
   fontSize: "10pt",
   textAlign: "center",
-  whiteSpace: "nowrap",
   color: "black",
   marginTop: "0",
   marginBottom: "0"
@@ -33,7 +31,6 @@ export const myriad12 = {
   fontFamily: "Myriad Pro",
   fontSize: "1.3rem",
   textAlign: "center",
-  whiteSpace: "nowrap",
   color: "black",
   marginTop: "0",
   marginBottom: "0"
@@ -43,10 +40,9 @@ export const myriad16 = {
   fontFamily: "Myriad Pro",
   fontSize: "1.8rem",
   textAlign: "center",
-  whiteSpace: "nowrap",
   color: "black",
-  marginTop: "0.3rem",
-  marginBottom: "0.3rem"
+  marginTop: "0.2rem",
+  marginBottom: "0.2rem"
 };
 
 export const myriad28Bold = {
@@ -54,26 +50,25 @@ export const myriad28Bold = {
   fontSize: "3.2rem",
   fontWeight: "bold",
   textAlign: "center",
-  lineHeight: "3.2rem",
-  color: "black"
+  color: "black",
+  marginTop: "0",
+  marginBottom: "0"
 };
 
 export const myriad20Cond = {
-  fontFamily: "Myriad Pro",
+  fontFamily: "Myriad Pro Condensed",
   fontSize: "2.2rem",
-  fontStretch: "condensed",
   textAlign: "center",
-  whiteSpace: "nowrap",
   color: "black",
-  marginTop: "0.3rem",
-  marginBottom: "0.3rem"
+  marginTop: "0.2rem",
+  marginBottom: "0.2rem"
 };
 
 export const myriad28Cond = {
-  fontFamily: "Myriad Pro",
+  fontFamily: "Myriad Pro Condensed",
   fontSize: "3.2rem",
-  fontStretch: "condensed",
   textAlign: "center",
-  lineHeight: "3.2rem",
-  color: "black"
+  color: "black",
+  marginTop: "0.2rem",
+  marginBottom: "0.2rem"
 };

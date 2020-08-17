@@ -65,6 +65,9 @@ export const TranscriptFooterNIEC = ({ doc }) => (
 			  <strong>{doc.additionalData.transcriptSignatories[1].designation} </strong>
 			  <br />
 			  <strong>{doc.additionalData.transcriptSignatories[1].organisation} </strong>
+			   <br />
+			   <br />
+			  {doc.additionalData.transcriptData.effectiveDate}
 			</div>
 		</div>
 		<br />

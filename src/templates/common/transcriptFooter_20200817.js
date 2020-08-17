@@ -46,6 +46,9 @@ export const TranscriptFooter = ({ doc }) => (
 
 			<div className="signature-container" style={arial11PtC}> <strong>
 			  {doc.additionalData.transcriptSignatories[0].designation} </strong>
+			   <br />
+			   <br />
+			  {doc.additionalData.transcriptData.effectiveDate}
 			</div>
 		</div>
 		<br />
