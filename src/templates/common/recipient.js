@@ -23,11 +23,11 @@ const Recipient = ({ doc }) => (
 	<div className="row"> <br /> </div>
 
 	<div> {doc.additionalData.transcriptData.graduationField.includes("DATE OF GRADUATION")
-	? 	<div className="row">
-		<div className="col-7">  </div>
-		<div className="col-4"> {doc.additionalData.transcriptData.graduationField} : &nbsp; {doc.additionalData.transcriptData.graduationDates} </div>
-	  </div>
-	: null
+		? <div className="row">
+			<div className="col-7">  </div>
+			<div className="col-4"> {doc.additionalData.transcriptData.graduationField} : &nbsp; {doc.additionalData.transcriptData.graduationDates} </div>
+		  </div>
+		: <div className="row"> <br /> </div>
 	} </div>
 
     <div className="row">
