@@ -43,13 +43,13 @@ export const GradingSystem = ({ doc }) => {
 
   const legendGrades = legend.map((s, j) => {
     const gradeLines = s.grades.map((t, i) => (
-		<div className="row" key={i}>
+		<div key={i}>
 			<div> {t.grade
-			? <div>
-			  <div className="col-5" style={arial9PtC}>{t.grade}</div>
-			  <div className="col-7" style={arial9PtL}>{t.gradeDescription} </div>
+			? <div className="row">
+				  <div className="col-5" style={arial9PtC}>{t.grade}</div>
+				  <div className="col-7" style={arial9PtL}>{t.gradeDescription} </div>
 			  </div>
-			:  <div> {t.gradeDescription
+			:  <div className="row"> {t.gradeDescription
 				? <div className="col-7" style={arial9PtL}>{t.gradeDescription} </div>
 				: null
 				} </div>
