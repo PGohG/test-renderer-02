@@ -50,7 +50,7 @@ export const GradingSystem = ({ doc }) => {
 				  <div className="col-7" style={arial9PtL}>{t.gradeDescription} </div>
 			  </div>
 			:  <div className="row"> {t.gradeDescription
-				? <div className="col-11" style={arial9PtL}> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {t.gradeDescription} </div>
+				? <div className="col-11" style={arial9PtL}> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {t.gradeDescription} </div>
 				: <div className="row"> <br /> </div>
 				} </div>
 			} </div>
