@@ -4,6 +4,7 @@ import GradingSystem from "./gradingSystem";
 import GradingSystem2 from "./gradingSystem2";
 
 import {
+	arial9PtL,
 	arial11PtC
 } from "./certStyles";
 
