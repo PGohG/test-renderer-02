@@ -14,7 +14,7 @@ export const PrintWatermark: FunctionComponent = () => (
 
       @media print {
         width: 100%;
-        height: auto;
+        height: 100%;
         opacity: 0.6;
         display: block;
       }
