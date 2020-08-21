@@ -25,12 +25,12 @@ export const TranscriptFooter = ({ doc }) => (
     <br />
     <br />
 
-	<div>
-		<div className="col-4" style={arial9PtL}>
+	<div className="row">
+		<div className="col-4">
 			<GradingSystem doc={doc} />
 		</div>
 
-		<div className="col-3" style={arial9PtL}>
+		<div className="col-3">
 			<GradingSystem2 doc={doc} />
 		</div>
 
