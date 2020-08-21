@@ -25,7 +25,7 @@ export const TranscriptFooter = ({ doc }) => (
     <br />
     <br />
 
-	<div className="row">
+	<div>
 		<div className="col-4" style={arial9PtL}>
 			<GradingSystem doc={doc} />
 		</div>
