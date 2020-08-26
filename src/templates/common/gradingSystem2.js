@@ -19,7 +19,7 @@ export const GradingSystem2 = ({ doc }) => {
 	if (s.gradeSeq==101) {
 	  return (
 		  <div className="row">
-			<div className="col-11" style={arial9PtL}> &nbsp </div>
+			<div className="col-11" style={arial9PtL}> </div>
 			<br />
 			<br />
 			<div className="col-5" style={arial9PtC}><u>Grade</u></div>
