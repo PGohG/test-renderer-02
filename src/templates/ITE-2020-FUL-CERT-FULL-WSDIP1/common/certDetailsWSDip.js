@@ -109,7 +109,7 @@ export const renderCertDescrWSDip = doc => (
 
 export const renderTwoSignaturesWSDip = doc => (
   <div
-    className="row d-flex justify-content-center" style={fullWidthStyle}
+    className="row d-flex justify-content-center" style={{ whiteSpace: "nowrap" }}
   >
 
     <div className="col-5 justify-content-center align-items-center">
