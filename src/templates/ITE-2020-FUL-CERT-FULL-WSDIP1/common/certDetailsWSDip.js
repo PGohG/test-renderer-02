@@ -50,7 +50,9 @@ export const renderFullCertAwardTextWSDip = doc => (
 export const renderCertDescrWSDip = doc => (
   <div style={{ lineHeight: "3.2rem", paddingTop: "1rem" }} >
 	<div className="row d-flex justify-content-center" >
-	  <span style={myriad28Bold}>{doc.description} </span>
+	  <span>
+	  	<p style={myriad28Bold}>{doc.description}</p>
+	  </span>
 	</div>
 
 	<div className="row d-flex justify-content-center">
@@ -71,17 +73,13 @@ export const renderCertDescrWSDip = doc => (
 
 	<div className="row d-flex justify-content-center">
 	  <span>
-		<p style={myriad28Bold}>
-		  {doc.additionalData.courseDescription}
-		</p>
+		<p style={myriad28Bold}>{doc.additionalData.courseDescription}</p>
 	  </span>
 	</div>
 
 	<div className="row d-flex justify-content-center">
 	  <span>
-		<p style={myriad28Bold}>
-		  {doc.additionalData.courseSpecialisation}
-		</p>
+		<p style={myriad28Bold}>{doc.additionalData.courseSpecialisation}</p>
 	  </span>
 	</div>
 

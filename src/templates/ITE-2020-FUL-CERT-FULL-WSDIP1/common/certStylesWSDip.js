@@ -5,7 +5,8 @@ export const IMG_CERTIFICATE_SEAL_LOGO =
 
 export const fullWidthStyle = {
   width: "100%",
-  height: "auto"
+  height: "auto",
+  whiteSpace: "nowrap"
 };
 
 export const halfWidthStyle = {
