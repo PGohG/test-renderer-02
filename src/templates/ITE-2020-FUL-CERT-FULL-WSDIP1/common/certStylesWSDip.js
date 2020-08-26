@@ -54,6 +54,7 @@ export const myriad28Bold = {
   fontSize: "3.2rem",
   fontWeight: "bold",
   textAlign: "center",
+  whiteSpace: "nowrap",
   lineHeight: "3.2rem",
   color: "black"
 };
