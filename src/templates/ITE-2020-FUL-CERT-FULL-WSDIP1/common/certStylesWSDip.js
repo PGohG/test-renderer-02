@@ -75,6 +75,7 @@ export const myriad28Cond = {
   fontSize: "3.2rem",
   fontStretch: "condensed",
   textAlign: "center",
+  whiteSpace: "nowrap",
   lineHeight: "3.2rem",
   color: "black"
 };
