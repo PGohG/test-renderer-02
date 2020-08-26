@@ -22,7 +22,12 @@ export const GradingSystem2 = ({ doc }) => {
 			<br />
 			<br />
 			<br />
-			<div className="col-5" style={arial9PtC}><u>Grade</u></div>
+			<div className="col-5" style={arial9PtC}>
+				<br />
+				<br />
+				<br />
+				<u>Grade</u>
+			</div>
 			<div className="col-7" style={arial9PtL}><u>Description</u></div>
 		  </div>
 		)
