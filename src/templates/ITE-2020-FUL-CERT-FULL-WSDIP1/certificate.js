@@ -33,7 +33,7 @@ const textStyle = {
 
 const signStyle = {
 	width: "100%",
-	minHeight: "200px",
+	height: "auto",
 	padding: "1rem 10rem 10rem",
 	whiteSpace: "nowrap",
 	overflow: "hidden"
