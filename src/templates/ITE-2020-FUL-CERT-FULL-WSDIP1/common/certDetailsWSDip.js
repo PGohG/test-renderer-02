@@ -113,7 +113,7 @@ export const renderTwoSignaturesWSDip = doc => (
   <div className="row d-flex justify-content-center" >
 
     <div className="col-4 justify-content-center">
-		<img src={IMG_CERTIFICATE_SEAL_LOGO} alt="ITE Seal" />
+		<img style={fullWidthStyle} src={IMG_CERTIFICATE_SEAL_LOGO} alt="ITE Seal" />
     </div>
 
   	<div className="col-3" >
@@ -123,14 +123,14 @@ export const renderTwoSignaturesWSDip = doc => (
 		<div style={myriad12}>
           	<br />
 
-			<img
+			<img style={fullWidthStyle}
 				src={doc.additionalData.certSignatories[0].signature}
 				alt="Cert Sign1"
 			/>
 
 			<p>	{doc.additionalData.certSignatories[0].designation}	</p>
 
-			<img
+			<img style={fullWidthStyle}
 				src={doc.additionalData.certSignatories[1].signature}
 				alt="Cert Sign2"
 			/>
