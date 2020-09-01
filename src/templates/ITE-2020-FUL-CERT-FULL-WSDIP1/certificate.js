@@ -38,34 +38,18 @@ const signStyle = {
 	overflow: "hidden"
 };
 
-const Template = ({ document }) => {
+const Template = ({ document }) => (
+ 	<div className="container" style={bgStyle}>
+		<div style={textStyle}>
+			{renderFullCertAwardTextWSDip(document)}
+		</div>
 
-	// 794px is width of A4 portrait (21cm)
-	const ratio = (window.innerWidth - 30) / 794;
-
-	const scale =
-	ratio < 1
-	  ? {
-		  transform: `scale(${ratio}, ${ratio})`,
-		  transformOrigin: "top left"
-		}
-	  : null;
-
-  const html = (
-	<div className="container">
-		<div style={bgStyle}>
-			<div style={textStyle}>
-				{renderFullCertAwardTextWSDip(document)}
-			</div>
-
-			<div style={signStyle}>
-				{renderTwoSignaturesWSDip(document)}
-			</div>
+		<div style={signStyle}>
+			{renderTwoSignaturesWSDip(document)}
 		</div>
 	</div>
-  );
-  return html;
-};
+);
+
 
 Template.propTypes = {
 	document: PropTypes.object.isRequired
