@@ -39,7 +39,20 @@ const signStyle = {
 
 const Template = ({ document }) => {
 
- 	<div size="A4" className="container" style={bgStyle}>
+	// 794px is width of A4 portrait (21cm)
+	const ratio = (window.innerWidth - 30) / 794;
+
+	const scale =
+	ratio < 1
+	  ? {
+		  transform: `scale(${ratio}, ${ratio})`,
+		  transformOrigin: "top left"
+		}
+	  : null;
+
+  const html = (
+	<div className="container">
+		<div style={bgStyle}>
 			<div style={textStyle}>
 				{renderFullCertAwardTextWSDip(document)}
 			</div>
@@ -47,6 +60,7 @@ const Template = ({ document }) => {
 			<div style={signStyle}>
 				{renderTwoSignaturesWSDip(document)}
 			</div>
+		</div>
 	</div>
   );
   return html;
