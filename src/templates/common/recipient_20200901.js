@@ -17,7 +17,7 @@ const Recipient = ({ doc }) => (
     <div className="row">
       <div className="col-1"> NAME </div>
       <div className="col-6"> : &nbsp; {doc.recipient.name.toUpperCase()} </div>
-	  <div className="col-4" style={{ whiteSpace: "nowrap" }}> IDENTIFICATION NO. &nbsp; : &nbsp; {doc.recipient.studentId} </div>
+	  <div className="col-4"> IDENTIFICATION NO. &nbsp; : &nbsp; {doc.recipient.studentId} </div>
     </div>
 
 	<div className="row"> <br /> </div>

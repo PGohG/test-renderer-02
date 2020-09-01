@@ -25,21 +25,8 @@ export const TranscriptFooter = ({ doc }) => (
     <br />
     <br />
 
-	<div> {doc.additionalData.transcriptData.career.includes("WORK-STUDY DIPLOMA")
-	? <div className="row">
-		<div className="col-8" style={arial9PtL}> <strong> Grading System: </strong> </div>
-		<br />
-		<br />
-	  </div>
-	: <div className="row">
-		<div className="col-8" style={arial9PtL}> <strong> Module Grading System: </strong> </div>
-		<br />
-		<br />
-	  </div>
-	} </div>
-
-	<div className="row" >
-		<div className="col-3">
+	<div className="row">
+		<div className="col-4">
 			<GradingSystem doc={doc} />
 		</div>
 
@@ -47,10 +34,9 @@ export const TranscriptFooter = ({ doc }) => (
 			<GradingSystem2 doc={doc} />
 		</div>
 
-		<div className="col-1">
-		</div>
-
 		<div className="col-4">
+			<br />
+			<br />
 			<div className="signature-container sign-underline">
 			  <img
 				style={fullWidthStyle}
