@@ -19,7 +19,8 @@ const bgStyle = {
 	backgroundImage: `url('${certificateBg}')`,
 	backgroundPosition: "top",
 	backgroundSize: "contain",
-	backgroundRepeat: "no-repeat"
+	backgroundRepeat: "no-repeat",
+	overflow: "hidden"
 };
 
 const textStyle = {
