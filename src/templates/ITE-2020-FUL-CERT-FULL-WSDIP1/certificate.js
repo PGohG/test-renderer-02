@@ -18,7 +18,7 @@ const bgStyle = {
 	height: "auto",
 	backgroundImage: `url('${certificateBg}')`,
 	backgroundPosition: "top",
-	backgroundSize: "contain",
+	backgroundSize: "cover",
 	backgroundRepeat: "no-repeat",
 	overflow: "hidden"
 };
