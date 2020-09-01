@@ -16,8 +16,6 @@ import {
 const bgStyle = {
 	width: "100%",
 	height: "auto",
-	border: "1px solid gray",
-	overflow: "hidden",
 	backgroundImage: `url('${certificateBg}')`,
 	backgroundPosition: "top",
 	backgroundSize: "cover",
