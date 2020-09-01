@@ -112,14 +112,14 @@ export const renderTwoSignaturesWSDip = doc => (
 
   <div className="row d-flex justify-content-center" >
 
-    <div className="col-4 justify-content-center" style={fullWidthStyle}>
+    <div className="col-4 justify-content-center">
 		<img src={IMG_CERTIFICATE_SEAL_LOGO} alt="ITE Seal" />
     </div>
 
   	<div className="col-3" >
   	</div>
 
-	<div className="col-4 justify-content-center" style={fullWidthStyle} >
+	<div className="col-4 justify-content-center">
 		<div style={myriad12}>
           	<br />
 
