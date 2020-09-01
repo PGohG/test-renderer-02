@@ -48,6 +48,7 @@ export const renderFullCertAwardTextWSDip = doc => (
 
 
 export const renderCertDescrWSDip = doc => (
+
   <div style={{ lineHeight: "3.2rem", paddingTop: "1rem" }} >
 	<div className="row d-flex justify-content-center" >
 	  <span>
@@ -111,14 +112,14 @@ export const renderTwoSignaturesWSDip = doc => (
 
   <div className="row d-flex justify-content-center" >
 
-    <div className="col-3 justify-content-center align-items-center" >
+    <div className="col-4 justify-content-center" >
 		<img style={fullWidthStyle} src={IMG_CERTIFICATE_SEAL_LOGO} alt="ITE Seal" />
     </div>
 
-  	<div className="col-2" >
+  	<div className="col-3" >
   	</div>
 
-	<div className="col-3 justify-content-center" >
+	<div className="col-4 justify-content-center" >
 		<div style={myriad12}>
           	<br />
 
