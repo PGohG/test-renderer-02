@@ -37,17 +37,13 @@ const signStyle = {
 	overflow: "hidden"
 };
 
-const Template = ({ document }) => {
+const Template = ({ document }) => (
  	<div size="A4" className="container" style={bgStyle}>
-			<div style={textStyle}>
-				{renderFullCertAwardTextWSDip(document)}
-			</div>
-
-			<div style={signStyle}>
-				{renderTwoSignaturesWSDip(document)}
-			</div>
+		{renderFullCertAwardTextWSDip(document)}
+		{renderTwoSignaturesWSDip(document)}
 	</div>
-};
+);
+
 
 Template.propTypes = {
 	document: PropTypes.object.isRequired
