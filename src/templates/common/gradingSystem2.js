@@ -15,7 +15,7 @@ export const GradingSystem2 = ({ doc }) => {
 	.orderBy(s => s.gradeSeq)
 	.value();
 
-  const legendGrades = legend.map((s, j) => {
+  const legendTitle = s => {
 	if (s.gradeSeq==101) {
 	  return (
 		  <div className="row">
@@ -24,7 +24,9 @@ export const GradingSystem2 = ({ doc }) => {
 		  </div>
 		)
 	  };
+  };
 
+  const legendGrades = legend.map((s, j) => {
     const gradeLines = s.grades.map((t, i) => (
 		<div className="row" key={i}>
 			<div className="col-5" style={arial9PtC}>{t.grade}</div>
@@ -35,6 +37,7 @@ export const GradingSystem2 = ({ doc }) => {
    	if (s.gradeSeq > 100) {
     return (
  	  <div key={j}>
+        {legendTitle(s)}
         {gradeLines}
       </div>
     )
