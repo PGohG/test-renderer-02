@@ -38,7 +38,6 @@ const signStyle = {
 };
 
 const Template = ({ document }) => {
-
  	<div size="A4" className="container" style={bgStyle}>
 			<div style={textStyle}>
 				{renderFullCertAwardTextWSDip(document)}
@@ -48,8 +47,6 @@ const Template = ({ document }) => {
 				{renderTwoSignaturesWSDip(document)}
 			</div>
 	</div>
-  );
-  return html;
 };
 
 Template.propTypes = {
