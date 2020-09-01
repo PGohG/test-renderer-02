@@ -19,8 +19,8 @@ export const GradingSystem = ({ doc }) => {
 	if (s.gradeSeq==1) {
 	  return (
 		  <div className="row">
-			<div className="col-4" style={arial9PtC}><u>Grade</u></div>
-			<div className="col-6" style={arial9PtL}><u>Description</u></div>
+			<div className="col-5" style={arial9PtC}><u>Grade</u></div>
+			<div className="col-7" style={arial9PtL}><u>Description</u></div>
 		  </div>
 		)
 	  };
@@ -29,14 +29,11 @@ export const GradingSystem = ({ doc }) => {
 		<div key={i}>
 			<div> {t.grade
 			? <div className="row">
-				  <div className="col-4" style={arial9PtC}>{t.grade}</div>
-				  <div className="col-6" style={arial9PtL}>{t.gradeDescription} </div>
+				  <div className="col-5" style={arial9PtC}>{t.grade}</div>
+				  <div className="col-7" style={arial9PtL}>{t.gradeDescription} </div>
 			  </div>
 			:  <div className="row"> {t.gradeDescription
-				? <div>
-					  <div className="col-4"> </div>
-					  <div className="col-6" style={arial9PtL}>{t.gradeDescription} </div>
-				</div>
+				? <div className="col-10" style={arial9PtL}>{t.gradeDescription} </div>
 				: <div className="row"> <br /> </div>
 				} </div>
 			} </div>

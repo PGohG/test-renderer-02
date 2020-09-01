@@ -19,26 +19,24 @@ export const GradingSystem2 = ({ doc }) => {
 	if (s.gradeSeq==101) {
 	  return (
 		  <div className="row">
-			<div className="col-4" style={arial9PtC}><u>Grade</u></div>
-			<div className="col-6" style={arial9PtL}><u>Description</u></div>
+			<div className="col-5" style={arial9PtC}><u>Grade</u></div>
+			<div className="col-7" style={arial9PtL}><u>Description</u></div>
 		  </div>
 		)
 	  };
 
     const gradeLines = s.grades.map((t, i) => (
 		<div className="row" key={i}>
-			<div className="col-4" style={arial9PtC}>{t.grade}</div>
-			<div className="col-6" style={arial9PtL}>{t.gradeDescription} &nbsp;</div>
+			<div className="col-5" style={arial9PtC}>{t.grade}</div>
+			<div className="col-7" style={arial9PtL}>{t.gradeDescription} &nbsp;</div>
 		</div>
     ));
 
    	if (s.gradeSeq > 100) {
     return (
- 	 <div className="container">
  	  <div key={j}>
         {gradeLines}
       </div>
- 	 </div>
     )
     };
  });
