@@ -108,6 +108,39 @@ export const renderCertDescrWSDip = doc => (
 );
 
 export const renderTwoSignaturesWSDip = doc => (
+
+  <div className="row d-flex justify-content-center" >
+
+    <div className="col-3 justify-content-center align-items-center" >
+		<img style={fullWidthStyle} src={IMG_CERTIFICATE_SEAL_LOGO} alt="ITE Seal" />
+    </div>
+
+  	<div className="col-2" >
+  	</div>
+
+	<div className="col-3 justify-content-center" >
+		<div style={myriad12}>
+          	<br />
+
+			<img style={fullWidthStyle}
+				src={doc.additionalData.certSignatories[0].signature}
+				alt="Cert Sign1"
+			/>
+
+			<p>	{doc.additionalData.certSignatories[0].designation}	</p>
+
+			<img  style={fullWidthStyle}
+				src={doc.additionalData.certSignatories[1].signature}
+				alt="Cert Sign2"
+			/>
+			<p> {doc.additionalData.certSignatories[1].designation}	</p>
+		</div>
+	</div>
+
+  </div>
+);
+
+export const renderTwoSignaturesWSDip1 = doc => (
   <div
     className="row justify-content-center" style={{ whiteSpace: "nowrap" }}
   >
