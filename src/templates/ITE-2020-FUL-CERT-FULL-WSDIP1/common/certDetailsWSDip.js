@@ -141,40 +141,6 @@ export const renderTwoSignaturesWSDip = doc => (
   </div>
 );
 
-export const renderTwoSignaturesWSDip1 = doc => (
-  <div
-    className="row justify-content-center" style={{ whiteSpace: "nowrap" }}
-  >
-
-    <div className="col-5 justify-content-center align-items-center">
-		<img style={threequartWidthStyle} src={IMG_CERTIFICATE_SEAL_LOGO} alt="ITE Seal" />
-    </div>
-
-  	<div className="col-1">
-  	</div>
-
-	<div className="col-6 justify-content-center">
-		<div style={myriad12}>
-			<img
-				style={halfWidthStyle}
-				src={doc.additionalData.certSignatories[0].signature}
-				alt="Cert Sign1"
-			/>
-
-			<p>	{doc.additionalData.certSignatories[0].designation}	</p>
-
-			<img
-				style={halfWidthStyle}
-				src={doc.additionalData.certSignatories[1].signature}
-				alt="Cert Sign1"
-			/>
-			<p> {doc.additionalData.certSignatories[1].designation}	</p>
-		</div>
-	</div>
-  </div>
-);
-
-
 /* eslint-disable */
 // Disabled eslint as there's no way to add proptypes to an anonymous function like this
 export default () => ({ doc }) => (
