@@ -30,7 +30,7 @@ export const renderFullCertAwardTextWSDip = doc => (
 		  <span style={myriad16}> This is to certify that </span>
 		</div>
 
-		<div className="row d-flex justify-content-center" style={{ minHeight: "6rem", alignContent: "center", padding: "1rem 3rem 1rem", whiteSpace: "nowrap" }} >
+		<div className="row d-flex justify-content-center" style={{ minHeight: "6rem", padding: "1rem 1rem 1rem" }} >
 		  <span style={myriad28Cond}>{doc.recipient.name}</span>
 		</div>
 
@@ -72,13 +72,13 @@ export const renderCertDescrWSDip = doc => (
 	  )}
 	</div>
 
-	<div className="row d-flex justify-content-center">
+	<div className="row d-flex justify-content-center" style={{ paddingLeft: "1rem", paddingRight: "1rem" }} >
 	  <span>
 		<p style={myriad28Bold}>{doc.additionalData.courseDescription}</p>
 	  </span>
 	</div>
 
-	<div className="row d-flex justify-content-center">
+	<div className="row d-flex justify-content-center" style={{ paddingLeft: "1rem", paddingRight: "1rem" }} >
 	  <span>
 		<p style={myriad28Bold}>{doc.additionalData.courseSpecialisation}</p>
 	  </span>
