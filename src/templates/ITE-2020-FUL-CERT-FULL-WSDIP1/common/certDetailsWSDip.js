@@ -72,13 +72,13 @@ export const renderCertDescrWSDip = doc => (
 	  )}
 	</div>
 
-	<div className="row d-flex justify-content-center" style={{ paddingLeft: "1rem", paddingRight: "1rem" }} >
+	<div className="row d-flex justify-content-center" style={{ paddingLeft: "0.5rem", paddingRight: "0.5rem" }} >
 	  <span>
 		<p style={myriad28Bold}>{doc.additionalData.courseDescription}</p>
 	  </span>
 	</div>
 
-	<div className="row d-flex justify-content-center" style={{ paddingLeft: "1rem", paddingRight: "1rem" }} >
+	<div className="row d-flex justify-content-center" style={{ paddingLeft: "0.5rem", paddingRight: "0.5rem" }} >
 	  <span>
 		<p style={myriad28Bold}>{doc.additionalData.courseSpecialisation}</p>
 	  </span>
