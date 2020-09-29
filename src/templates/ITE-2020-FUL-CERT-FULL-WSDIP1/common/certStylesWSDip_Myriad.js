@@ -20,10 +20,19 @@ export const threequartWidthStyle = {
   whiteSpace: "nowrap"
 };
 
+export const myriad10 = {
+  fontFamily: "Myriad Pro",
+  fontSize: "10pt",
+  textAlign: "center",
+  whiteSpace: "nowrap",
+  color: "black",
+  marginTop: "0",
+  marginBottom: "0"
+};
+
 export const myriad12 = {
-  fontFamily: "Roboto",
-  fontSize: "1.2rem",
-  fontWeight: "400",
+  fontFamily: "Myriad Pro",
+  fontSize: "1.3rem",
   textAlign: "center",
   whiteSpace: "nowrap",
   color: "black",
@@ -32,9 +41,8 @@ export const myriad12 = {
 };
 
 export const myriad16 = {
-  fontFamily: "Roboto",
-  fontSize: "1.7rem",
-  fontWeight: "400",
+  fontFamily: "Myriad Pro",
+  fontSize: "1.8rem",
   textAlign: "center",
   whiteSpace: "nowrap",
   color: "black",
@@ -43,18 +51,18 @@ export const myriad16 = {
 };
 
 export const myriad28Bold = {
-  fontFamily: "Roboto",
+  fontFamily: "Myriad Pro",
   fontSize: "3.2rem",
-  fontWeight: "700",
+  fontWeight: "bold",
   textAlign: "center",
   lineHeight: "3.2rem",
   color: "black"
 };
 
 export const myriad20Cond = {
-  fontFamily: "Roboto Condensed",
-  fontSize: "1.8rem",
-  fontWeight: "400",
+  fontFamily: "Myriad Pro",
+  fontSize: "2.2rem",
+  fontStretch: "condensed",
   textAlign: "center",
   whiteSpace: "nowrap",
   color: "black",
@@ -63,9 +71,9 @@ export const myriad20Cond = {
 };
 
 export const myriad28Cond = {
-  fontFamily: "Roboto Condensed",
-  fontSize: "2.6rem",
-  fontWeight: "400",
+  fontFamily: "Myriad Pro",
+  fontSize: "3.2rem",
+  fontStretch: "condensed",
   textAlign: "center",
   lineHeight: "3.2rem",
   color: "black"

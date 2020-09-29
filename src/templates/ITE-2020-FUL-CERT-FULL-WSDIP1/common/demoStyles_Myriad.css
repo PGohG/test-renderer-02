@@ -1,20 +1,12 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:regular,bold,black);
-@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
-
-@font-face {
-	font-family: "Myriad";
-   src: local('Myriad Pro'), local('Arial'), url(/fonts/MyriadPro-Cond.woff) format("woff");
-}
-
 body {
   background: white;
-  font-family: "Roboto", "Roboto Condensed", "Myriad", "Myriad Pro", "Source Sans Pro", sans-serif;
+  font-family: "Myriad","Source Sans Pro", sans-serif;
   line-height: 1.5;
   margin: 0px;
 }
 
 .root {
-  font: "Myriad Pro", "Source Sans Pro", sans-serif;
+  font: "Myriad","Source Sans Pro", sans-serif;
   --font-monospace: "Source Sans Pro", sans-serif;
   --font-monospace-size: 0.8rem !important;
   -webkit-font-smoothing: antialiased;
@@ -34,7 +26,6 @@ body {
 .cert-body {
   font-size: 16px;
 }
-
 
 @media (max-width: 200px) {
   .cert-body {
@@ -135,4 +126,3 @@ body {
     font-size: 28px;
   }
 }
-
