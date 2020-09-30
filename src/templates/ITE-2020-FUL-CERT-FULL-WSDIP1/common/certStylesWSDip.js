@@ -22,7 +22,7 @@ export const threequartWidthStyle = {
 
 export const myriad12 = {
   fontFamily: "Roboto",
-  fontSize: "1.2rem",
+  fontSize: "1.1rem",
   fontWeight: "400",
   textAlign: "center",
   whiteSpace: "nowrap",
