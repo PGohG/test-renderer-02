@@ -5,7 +5,6 @@ import { format } from "date-fns";
 import { get } from "lodash";
 import "bootstrap/dist/css/bootstrap.css";
 import "./common/demoStyles.css";
-import { PrintWatermark } from "./common/PrintWatermark";
 import certificateBg from "./common/certificate_background.png";
 
 import {

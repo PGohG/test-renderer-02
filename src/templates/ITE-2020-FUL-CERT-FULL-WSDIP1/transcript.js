@@ -1,6 +1,5 @@
 import PropTypes from "prop-types";
 import React from "react";
-import { PrintWatermark } from "./common/PrintWatermark";
 import TranscriptHeader from "../common/transcriptHeader";
 import Recipient from "../common/recipient";
 import ExamResults from "../common/examResults";
@@ -8,9 +7,6 @@ import ExemptionFootNote from "../common/exemptionFootNote";
 import TranscriptFooter from "../common/transcriptFooter";
 
 const Transcript = ({ document }) => (
-  <>
-    <PrintWatermark />
-
 	<div className="container">
 		<div className="transcript-content">
 			<TranscriptHeader />
@@ -20,7 +16,6 @@ const Transcript = ({ document }) => (
 			<TranscriptFooter doc={document} />
 		</div>
 	</div>
-  </>
 );
 
 Transcript.propTypes = {
