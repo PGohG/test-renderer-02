@@ -152,8 +152,7 @@ export const renderTwoSignatures = doc => (
     </div>
 
     {renderSignatory(doc, 0, "", "", "")}
-    {renderSignatory(doc, 1, doc.id, "/", doc.recipient.studentId
-    )}
+    {renderSignatory(doc, 1, doc.id, "", "")}
   </div>
 );
 
@@ -361,7 +360,7 @@ export const renderTwoNiecSignatures = doc => (
       <div className="text-center">
         <strong>
           <p style={timesNewRoman24Pt}>
-            {doc.id}/{doc.recipient.studentId}
+            {doc.id}
           </p>
         </strong>
       </div>
