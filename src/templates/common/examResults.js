@@ -23,21 +23,15 @@ const ExamResults = ({ doc }) => (
 		<SubjectGrades doc={doc} />
 		<br />
 
- 	   <div> {doc.cumulativeScore
-		? <div className="row">
-			<div className="col-11"> <strong> GRADE POINT AVERAGE &nbsp;  : &nbsp; &nbsp; {doc.cumulativeScore.toFixed(3)}</strong>
-			<br />
-			<br />
-		   </div>
-		: null
-		} </div>
-
-		<div className="row">
+ 	   <div> {doc.cumulativeScore==="0"
+		? null
+		: <div className="row">
 			<div className="col-11"> <strong> GRADE POINT AVERAGE &nbsp;  : &nbsp; &nbsp; {doc.cumulativeScore.toFixed(3)}</strong>
 				<br />
 				<br />
 			</div>
 		</div>
+		} </div>
 
 		<div className="row">
 		  <div className="col-2"> <strong> RESULT &nbsp; :</strong></div>
