@@ -23,7 +23,7 @@ const ExamResults = ({ doc }) => (
 		<SubjectGrades doc={doc} />
 		<br />
 
- 	   <div> {doc.cumulativeScore==="0"
+ 	   <div> {doc.cumulativeScore===0
 		? null
 		: <div className="row">
 			<div className="col-11"> <strong> GRADE POINT AVERAGE &nbsp;  : &nbsp; &nbsp; {doc.cumulativeScore.toFixed(3)}</strong>
